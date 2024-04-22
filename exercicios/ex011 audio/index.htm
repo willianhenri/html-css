@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente diminua ou aumente o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1200px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>
+        Reproduzindo audio
+    </h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <p><audio src="midia/WIU.mp3" controls autoplay></audio></p>
+    
+    <!-- Outra maneira de colocar audio -->
+    
+    <audio preload="auto" autoplay controls loop> <!-- loop é para tocar repetidamente quando o audio acabar-->
+        <source src="midia/WIU.mp3" type="audio/mpeg">
+        <source src="midia/WIU.wav" type="audio/wav">
+        <source src="midia/WIU.ogg" type="audio/ogg">
+    </audio>
+</body>
+</html>
