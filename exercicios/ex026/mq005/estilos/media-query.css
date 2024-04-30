@@ -1,0 +1,22 @@
+@media screen and (min-width:768px) {
+    #burger{
+        display: none;
+    }
+    menu{
+        display: block;
+        margin-left: 4px;
+    }
+
+    ul{
+        display: flex;
+    }
+
+    li{
+        padding-right: 10px;
+    }
+
+    a{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
